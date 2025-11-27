@@ -46,7 +46,8 @@ Siga os passos abaixo para colocar o projeto em execução na sua máquina:
 ```bash
 git clone [https://github.com/Joao-Pedro-AlmeidaG/Mini_Spotify_com_Spring.git](https://github.com/Joao-Pedro-AlmeidaG/Mini_Spotify_com_Spring.git)
 cd Mini_Spotify_com_Spring
-2. Configurar o Banco de Dados
+```
+### 2. Configurar o Banco de Dados
 O projeto utiliza o H2 Database por padrão em modo de desenvolvimento.
 
 Se você optar por usar o PostgreSQL (ou outro DB), atualize o arquivo src/main/resources/application.properties com suas credenciais:
@@ -57,39 +58,29 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/mini_spotify_db
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 spring.jpa.hibernate.ddl-auto=update
-3. Compilar e Executar
+
+### 3. Compilar e Executar
 Utilize o Maven para construir o projeto e rodar a aplicação:
 
-Bash
+```Bash
 
 mvn clean install
 mvn spring-boot:run
 A aplicação estará acessível em http://localhost:8080.
+```
+---
 
-📝 Documentação da API (Swagger UI)
+## 📝 Documentação da API (Swagger UI)
 Após a execução, você pode acessar a documentação completa dos endpoints RESTful em:
 
 http://localhost:8080/swagger-ui.html
 
 Utilize esta interface para testar todos os endpoints disponíveis.
 
-🤝 Contribuições
-Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir issues para relatar bugs ou sugerir novas funcionalidades, e enviar pull requests para implementá-las.
+---
 
-Faça um fork do projeto.
-
-Crie uma branch para sua funcionalidade: git checkout -b feature/nova-funcionalidade.
-
-Comite suas alterações: git commit -m 'feat: adiciona nova funcionalidade X'.
-
-Faça push para a branch: git push origin feature/nova-funcionalidade.
-
-Abra um Pull Request.
-
-📄 Licença
+##📄 Licença
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-👨‍💻 Autor
+##👨‍💻 Autor
 João Pedro Almeida G.
-
-GitHub
