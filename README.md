@@ -11,7 +11,7 @@ Este é um projeto de simulação simplificada de um serviço de streaming de m�
 | **Framework** | Spring Boot | 3.x.x |
 | **Linguagem** | Java | 17+ |
 | **Persistência** | Spring Data JPA | - |
-| **Banco de Dados** | H2 Database (Dev) / PostgreSQL (Prod) | - |
+| **Banco de Dados** |  PostgreSQL (Prod) | - |
 | **APIs** | RESTful Services | - |
 | **Documentação** | Springdoc-OpenAPI / Swagger UI | - |
 
