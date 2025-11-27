@@ -73,15 +73,6 @@ A aplicação estará acessível em http://localhost:8080.
 ```
 ---
 
-## 📝 Documentação da API (Swagger UI)
-Após a execução, você pode acessar a documentação completa dos endpoints RESTful em:
-
-http://localhost:8080/swagger-ui.html
-
-Utilize esta interface para testar todos os endpoints disponíveis.
-
----
-
 ##📄 Licença
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
