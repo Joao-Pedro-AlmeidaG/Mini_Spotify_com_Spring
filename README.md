@@ -54,11 +54,14 @@ Se você optar por usar o PostgreSQL (ou outro DB), atualize o arquivo src/main/
 
 Properties
 
+```Bash
+
 spring.datasource.url=jdbc:postgresql://localhost:5432/mini_spotify_db
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
 spring.jpa.hibernate.ddl-auto=update
-
+```
+---
 ### 3. Compilar e Executar
 Utilize o Maven para construir o projeto e rodar a aplicação:
 
