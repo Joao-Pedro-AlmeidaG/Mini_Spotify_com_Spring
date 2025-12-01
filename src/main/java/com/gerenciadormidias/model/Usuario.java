@@ -1,5 +1,8 @@
 package com.gerenciadormidias.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import java.util.List;
 
@@ -11,9 +14,11 @@ public class Usuario {
     private String nome;
 
     @OneToMany(mappedBy = "dono")
+    @JsonManagedReference
     private List<Playlist> playlists;
 
     @OneToOne
+    @JsonBackReference
     private Playlist playlistPrincipal;
 
     public Long getId(){ return id; }

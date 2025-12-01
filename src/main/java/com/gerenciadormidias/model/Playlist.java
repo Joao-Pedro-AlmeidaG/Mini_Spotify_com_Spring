@@ -1,5 +1,8 @@
 package com.gerenciadormidias.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import java.util.List;
 
@@ -11,12 +14,14 @@ public class Playlist {
     private String nome;
 
     @ManyToMany
+    @JsonManagedReference
     @JoinTable(name = "playlist_midia",
             joinColumns = @JoinColumn(name = "playlist_id"),
             inverseJoinColumns = @JoinColumn(name = "midia_id"))
     private List<Midia> midias;
 
     @ManyToOne
+    @JsonBackReference
     private Usuario dono;
 
     public Long getId(){ return id; }
